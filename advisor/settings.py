@@ -47,6 +47,12 @@ REST_FRAMEWORK = {
         ('rest_framework_simplejwt.authentication.JWTAuthentication',)
 }
 
+
+REST_FRAMEWORK = {
+   
+    'DATETIME_FORMAT': '%Y-%m-%d %H:%M'
+}
+
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=365),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=180),

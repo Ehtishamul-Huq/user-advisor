@@ -2,7 +2,7 @@ from rest_framework import status, generics
 from rest_framework.generics import CreateAPIView, RetrieveAPIView, GenericAPIView
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
-from user.serializers import UserRegistrationSerializer, UserLoginSerializer
+from .serializers import UserRegistrationSerializer, UserLoginSerializer
 from .models import User
 from django.contrib.sites.shortcuts import get_current_site
 from rest_framework_simplejwt.tokens import RefreshToken

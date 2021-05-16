@@ -7,4 +7,4 @@ class AdvisorAdmin(admin.ModelAdmin):
 
 @admin.register(AdvisorBooking)
 class AdvisorBookingAdmin(admin.ModelAdmin):
-    list_display = ['id', 'advisor', 'booking_time']
+    list_display = ['id', 'booking_time']
