@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$&@9)p2h6zsmivwuxv^3-dotfont98+^orvb$4rxcsga%^o*x6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'user-advisors.herokuapp.com']
 
@@ -105,7 +105,8 @@ WSGI_APPLICATION = 'advisor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'C:/Users/ELCOT/Desktop/nurture/advisor/db.sqlite3',
+        #'NAME': os.path.join('BASE_DIR', 'db.sqlite3')
     }
 }
 
@@ -136,8 +137,6 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-#DATETIME_FORMAT = '%DD-%MM-%YYYY %HH:%MM'
-
 USE_I18N = True
 
 USE_L10N = True
@@ -152,7 +151,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'advisor/static'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
