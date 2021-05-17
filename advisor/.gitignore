@@ -3,7 +3,7 @@
 /advisor/settings.py
 /advisor/static/
 /advisor/tmp/
-/images/
+images/
 .env
 
 # Byte-compiled / optimized / DLL files
