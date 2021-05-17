@@ -1,5 +1,4 @@
 from django.db import models
-from django.db.models.fields import related
 from user.models import User
 
 class Advisor(models.Model):

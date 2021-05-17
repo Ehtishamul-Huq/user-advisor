@@ -13,15 +13,9 @@ class AdvisorSerializer(serializers.ModelSerializer):
 
 
 class AdvisorBookingSerializer(serializers.ModelSerializer):
-    #profile = AdvisorSerializer(required=False, read_only=True)
-    #userprofile = UserRegistrationSerializer(many=True, required=False, read_only=True)
-    #booking_time = serializers.DateTimeField()
     class Meta:
         model = AdvisorBooking
         fields = ('id','user','advisor', "booking_time")
-        #fields = '__all__'
-        #extra_kwargs = {'user':{'read_only':True}, 'advisor':{'read_only':True}}
-        #depth = 1
 
 class AdvisorDetailSerializer(serializers.ModelSerializer):
     class Meta:
